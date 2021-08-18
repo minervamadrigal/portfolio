@@ -35,6 +35,59 @@ div {
   box-sizing: border-box;
 
 }
+
+/*Menu div*/
+.navbar{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 10;
+  padding: 20px 0px;
+  transition: all 0.3s ease 0s;
+  background-color: #000;
+}
+
+.navbar .navbarinner{
+  width: 100%;
+  height: auto;
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .navbarinner .logo img{
+  max-width: 70px;
+}
+
+.navbar .menu{
+  display: flex;
+  align-content: center;
+}
+
+.navbar .menu .links ul{
+  margin: 0px;
+  list-style-type: none;
+  position: relative;
+  top: 5px;
+}
+
+.navbar .menu .links ul li{
+  margin: 0px 30px 0px 0px;
+  display: inline-block;
+}
+
+.navbar .menu .links .ul li a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat";
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
 /*Home div*/
 .home{
   width: 100%;
@@ -827,3 +880,64 @@ img{
   font-style: italic;
 }
 
+.contact .fields .last .button{
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+
+.contact .fields .button a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-color: #fff;
+  border: 2px solid #fff;
+  padding: 13px 50px;
+  display: inline-block;
+  font-style: italic;
+  transition: all 0.3s ease 0s;
+}
+
+/*footer div*/
+
+.footer{
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 90px 0px 60px;
+}
+
+.footer .footerinner{
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+
+.footer .footerinner ul{
+  margin: 0px 0px 0px -30px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .footerinner ul li{
+  margin: 0px 0px 30px;
+  width: 25%;
+  float: left;
+  padding-left: 30px;
+}
+
+.footer .footerinner ul li span{
+  display: block;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.footer .footerinner ul li span a{
+  text-decoration: none;
+  color: #7fd7ff !important;
+}
