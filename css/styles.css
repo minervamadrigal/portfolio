@@ -824,9 +824,11 @@ img{
   transition: all 0.3s ease;
 }
 
-.testimonials .testinner .right .image_list ul li .test_item .active{
+.testimonials .testinner .right .image_list ul li.active{
   opacity: 1;
 }
+
+
 
 /*News div*/
 
@@ -850,6 +852,7 @@ img{
 .news .newsinner ul{
   margin: 0px 0px 0px -50px;
   list-style-type: none;
+  padding-inline-start: 0px;
 }
 
 .news .newsinner ul li{
