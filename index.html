@@ -7,11 +7,10 @@
     <title>Portafolio</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/styles.css" />
-    
+    <link rel="stylesheet" href="css/styles.css" />    
 </head>
 <body>
-  <div class="allitems">
+  <div class="allitems">    
     <div class="navbar">
       <div class="container">
         <div class="navbarinner">
@@ -59,25 +58,43 @@
         </div>        
       </div>
     </div>
-    <div class="navbarmobile">
+    <div class="navbarmobile">      
       <div class="navbarinner">
-        <div class="container bigger"></div>
-        <div class="navbarin">
+        <div class="container"></div>
+        <div class="navbarin">          
           <div class="logo">
             <a href="#">
               <img src="img/logom.png" alt="">
             </a>
           </div>
-          <div class="mobtrigger">
-            <div class="burger">
-
-            </div>
-            <script src="js/main.js"></script>
-          </div>
-
+          <div class="mobtrigger" id="mobtrigger">
+            <div class="burger"></div>
+          </div>          
         </div>
       </div>
-      <div class="dropdown" style="display: none;"></div>
+      <div class="dropdown" id="dropdown">
+      <div class="container">
+        <div class="dropdowninner">
+          <ul class="anchornav">
+            <li class="current">
+              <a href="#">Inicio</a>
+            </li>
+            <li class>
+              <a href="#about">Acerca</a>
+            </li>
+            <li class>
+              <a href="#portfolio">Portafolio</a>
+            </li>
+            <li class>
+              <a href="#news">Noticias</a>
+            </li>
+            <li class>
+              <a href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
     </div>
     <div class="home">
       <div class="background">
@@ -190,8 +207,8 @@
               </div>
             </div>
             <div class="portfolioinner">
-              <ul class="gallery" style="position: relative; height: 1014.66px;">
-                <li class="twitter" style="position: absolute; left: 0px; top:0px">
+              <ul class="gallery">
+                <li class="twitter">
                   <div class="list_inner">
                     <div class="image">
                       <img src="img/twitter.jpg" alt="">
@@ -208,7 +225,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="youtube" style="position: absolute; left: 423.328px; top:0px">
+                <li class="youtube">
                   <div class="list_inner">
                     <div class="image">
                       <img src="img/youtube1.jpg" alt="">
@@ -225,7 +242,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="socialclub" style="position: absolute; left: 846.656px; top:0px">
+                <li class="socialclub">
                   <div class="list_inner">
                     <div class="image">
                       <img src="img/socialclub.jpg" alt="">
@@ -242,7 +259,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="image" style="position: absolute; left: 0px; top:507.328px">
+                <li class="image">
                   <div class="list_inner">
                     <div class="image">
                       <img src="img/salem.jpg" alt="">
@@ -259,7 +276,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="image" style="position: absolute; left: 423.328px; top:507.328px">
+                <li class="image">
                   <div class="list_inner">
                     <div class="image">
                       <img src="img/lion.jpg" alt="">
@@ -276,7 +293,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="image" style="position: absolute; left: 846.656px; top:507.328px">
+                <li class="image">
                   <div class="list_inner">
                     <div class="image">
                       <img src="img/smile.jpg" alt="">
@@ -563,6 +580,7 @@
             </div>
           </div>
         </div>
-  </div>    
+  </div> 
+  <script src="js/main.js"></script>   
 </body>
 </html>
