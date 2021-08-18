@@ -88,6 +88,29 @@ div {
   display: inline-block;
 }
 
+.navbar .menu .links ul li a .first{
+  position: absolute;
+  transform: translateY(0px);
+  transition: all 0.3s ease 0s;
+}
+
+.navbar .menu .links ul li:hover a .first{
+  transform: translateY(100%);
+  transition: all 0.3s ease 0s;
+}
+
+.navbar .menu .links ul li:hover a .second{
+  transform: translateY(0%);
+  transition: all 0.3s ease 0s;
+}
+
+.navbar .menu .links ul li a .second{
+  position: relative;
+  display: block;
+  transform: translateY(-100%);
+  transition: all 0.3s ease 0s;
+}
+
 /*Home div*/
 .home{
   width: 100%;
