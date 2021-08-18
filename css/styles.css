@@ -25,6 +25,14 @@ ul{
   padding-inline-start: 40px;
 }
 
+p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 .container{
   max-width: 1400px;
   width: 100%;
@@ -909,9 +917,9 @@ img{
 
 .news ul li .details .date{
   font-family: "Montserrat";
-    font-size: 13px;
-    color: #bbb;
-    font-style: italic;
+  font-size: 13px;
+  color: #bbb;
+  font-style: italic;
 }
 
 .news ul li .details .date a{
@@ -1025,6 +1033,8 @@ img{
 .contact .fields ul{
   margin: 0px;
   list-style-type: none;
+  width: 100%;
+  padding-inline-start: 0px;
 }
 
 .contact .fields ul li{
@@ -1078,6 +1088,7 @@ img{
   clear: both;
   float: left;
   padding: 90px 0px 60px;
+  background-color: #111;
 }
 
 .footer .footerinner{
@@ -1174,6 +1185,39 @@ img{
   }
   .news .newsinner ul li{
     width: 50%;
+  }
+  .contact{
+    padding-top: 140px;
+  }
+  .contact .desc{
+    max-width: 100%;
+    padding-top: 30px;
+  }
+  .contact .contactinner .wrapper{
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .contact .contactinner .left{
+    width: 100%;
+    padding-right: 0px;
+    margin-bottom: 40px;
+  }
+  .contact .contactinner .right{
+    width: 100%;
+    padding-left: 0px;
+  }
+  .footer .footerinner ul{
+    display: block;
+    margin: 0px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer .footerinner ul li{
+    width: 100%;
+    padding-left: 0px;
+    float: left;
+    margin: 0px 0px 30px 0px;
   }
 }
 
