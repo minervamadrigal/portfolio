@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+
+@font-face {
+  font-family: "Oswald-Light";
+  src: url("../tipografias/Oswald/static/Oswald-Light.ttf");
+}
+
+.main-section {
+  height: 100vh;
+  background-image: url("../img/main-section.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  text-align: right;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  padding: 10px;
+  line-height: 3.5rem;
+}
+
+.main-title h2 {
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+.main-title h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.main-title h1 span {
+  color: #c39967;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 15%;
+  margin: auto;
+  border-radius: 30px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul li {
+  width: 33%;
+}
+
+nav ul li a img {
+  max-width: 30%;
+}
