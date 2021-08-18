@@ -753,6 +753,12 @@ img{
   opacity: 0;
 }
 
+.testimonials .quote_list ul li .details .main{
+  opacity: 1;
+  transition: all 1s .3s ease;
+  transform: scale(1) translateZ(0);
+}
+
 .testimonials .short{
   padding-left: 25px;
 }
@@ -1114,7 +1120,7 @@ img{
   }
 }
 
-@media (max-width:1040px){
+@media only screen and (max-width:1040px){
   .container{
     padding: 0px 20px;
   }
@@ -1133,6 +1139,41 @@ img{
   }
   .portfolio .portfoliofilter .wrapper{
     display: none;
+  }
+  .testimonials .testinner .right{
+    display: none;
+  }
+  .maintitle{
+    display: block;
+  }
+  .testimonials .testinner{
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .testimonials .testinner .left{
+    padding-right: 0px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .testimonials .quote_list ul{
+    flex-direction: column;
+  }
+  .testimonials .quote_list ul li{
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .testimonials .quote_list ul li .text{
+    opacity: 1;
+    visibility: visible;
+  }
+  .bg{
+    font-size: 60px;
+  }
+  .news{
+    padding-top: 140px;
+  }
+  .news .newsinner ul li{
+    width: 50%;
   }
 }
 
@@ -1179,5 +1220,11 @@ img{
     width: 100%;
     padding-left: 0px;
   }
-
+  .news .newsinner ul{
+    margin-left: 0px;
+  }
+  .news .newsinner ul li{
+    width: 100%;
+    padding-left: 0px;
+  }
 }
