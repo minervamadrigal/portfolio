@@ -714,6 +714,16 @@ img{
   position: absolute;
   margin: 0px;
   width: 100%;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+
+.testimonials .quote_list ul li.active{
+  position: absolute;
+  margin: 0px;
+  width: 100%;
+  visibility: visible;
+  transition: all 0.5s ease;
 }
 
 .testimonials .quote_list ul li .img{
@@ -723,12 +733,20 @@ img{
   opacity: 0;
 }
 
-.testimonials .quote_list ul li .text{
+.testimonials .quote_list ul li p .text{
   opacity: 0;
-  visibility: hidden;
+  visibility: visible;
   font-style: italic;
   color:#fff;
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
+}
+
+.testimonials .quote_list ul li p.active .text{
+  opacity: 1;
+  visibility: visible;
+  font-style: italic;
+  color:#fff;
+  transition: all 0.7s ease;
 }
 
 .testimonials .details{
@@ -1175,7 +1193,13 @@ img{
   .testimonials .quote_list ul li{
     position: relative;
     margin-bottom: 50px;
+    visibility: visible;
   }
+
+.testimonials .quote_list ul li.active{
+  position: relative;
+}
+
   .testimonials .quote_list ul li .text{
     opacity: 1;
     visibility: visible;
